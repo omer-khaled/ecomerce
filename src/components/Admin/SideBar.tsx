@@ -7,7 +7,7 @@ function SideBar():ReactElement {
       <h2 className='fs-5 fw-bold text-primary text-capitalize text-center'>admin dashboard</h2>
       <div className='bg-info box p-2 overflow-auto'>
         <div className='h-80 fs-6 box py-3 overflow-auto'>
-        <NavLink end to={"/admin"} className={({isActive}:{isActive:boolean})=>{
+        <NavLink end to={"/ecomerce/admin"} className={({isActive}:{isActive:boolean})=>{
             return (isActive)?'activenav text-decoration-none':'text-decoration-none';
         }}>
             <div className='admin-button-hover  w-100 d-flex justify-content-start align-items-center rounded  px-3 py-2 '>
@@ -15,7 +15,7 @@ function SideBar():ReactElement {
               <span>Home</span>
             </div>
         </NavLink>
-          <NavLink to={"/admin/products"} className={({isActive}:{isActive:boolean})=>{
+          <NavLink to={"/ecomerce/admin/products"} className={({isActive}:{isActive:boolean})=>{
               return (isActive)?'activenav text-decoration-none':'text-decoration-none';
           }}>
             <div className='admin-button-hover w-100 d-flex justify-content-start align-items-center rounded mt-3  px-3 py-2'>
@@ -23,7 +23,7 @@ function SideBar():ReactElement {
               <span>Products</span>
             </div>
           </NavLink>
-          <NavLink to={"/admin/categories"} className={({isActive}:{isActive:boolean})=>{
+          <NavLink to={"/ecomerce/admin/categories"} className={({isActive}:{isActive:boolean})=>{
               return (isActive)?'activenav text-decoration-none':'text-decoration-none';
           }}>
             <div className='admin-button-hover w-100 d-flex justify-content-start align-items-center rounded mt-3  px-3 py-2'>
@@ -31,7 +31,7 @@ function SideBar():ReactElement {
               <span>Categories</span>
             </div>
           </NavLink>
-          <NavLink to={"/admin/companies"} className={({isActive}:{isActive:boolean})=>{
+          <NavLink to={"/ecomerce/admin/companies"} className={({isActive}:{isActive:boolean})=>{
               return (isActive)?'activenav text-decoration-none':'text-decoration-none';
           }}>
             <div className='admin-button-hover w-100 d-flex justify-content-start align-items-center rounded mt-3  px-3 py-2'>
@@ -39,7 +39,7 @@ function SideBar():ReactElement {
               <span>Companies</span>
             </div>
           </NavLink>
-          <NavLink to={"/admin/blogs"} className={({isActive}:{isActive:boolean})=>{
+          <NavLink to={"/ecomerce/admin/blogs"} className={({isActive}:{isActive:boolean})=>{
               return (isActive)?'activenav text-decoration-none':'text-decoration-none';
           }}>
             <div className='admin-button-hover w-100 d-flex justify-content-start align-items-center rounded mt-3  px-3 py-2'>
@@ -47,7 +47,7 @@ function SideBar():ReactElement {
               <span>Blogs</span>
             </div>
           </NavLink>
-          <NavLink to={"/admin/orders"} className={({isActive}:{isActive:boolean})=>{
+          <NavLink to={"/ecomerce/admin/orders"} className={({isActive}:{isActive:boolean})=>{
               return (isActive)?'activenav text-decoration-none':'text-decoration-none';
           }}>
             <div className='admin-button-hover w-100 d-flex justify-content-start align-items-center rounded mt-3  px-3 py-2'>

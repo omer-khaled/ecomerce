@@ -116,7 +116,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path:'/admin',
+    path:'/ecomerce/admin',
     element:<Suspense fallback={<div className='flex-grow-1'><Loading classNamePropert='loader'/></div>}><AdminPage/></Suspense>,
     children:[
       {
