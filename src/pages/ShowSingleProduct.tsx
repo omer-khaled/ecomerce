@@ -179,8 +179,10 @@ function ShowSingleProduct():ReactElement {
                                      <div className='ms-2'>
                                         <StarsRating
                                             value={rate}
-                                            onChange={(value:number) => {
-                                                setRate(value);
+                                            onChange={(value:number|undefined) => {
+                                                if(value){
+                                                    setRate(value);
+                                                }
                                             }}
                                         />
                                      </div>
