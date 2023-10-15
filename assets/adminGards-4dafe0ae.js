@@ -1,0 +1,1 @@
+import{d as a,j as t}from"./index-594e7971.js";import e from"./Login-354816f1.js";const u=function(r){function o(){const n=a(s=>s.auth.auth);return t.jsx(t.Fragment,{children:n!==null&&n===!0?t.jsx(r,{}):t.jsx(e,{admin:!0})})}return o},c=u;export{c as a};
