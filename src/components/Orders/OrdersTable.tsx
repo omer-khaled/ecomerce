@@ -103,7 +103,7 @@ function OrdersTable({orders,admin}:{orders:ordersType[]|null,admin:null|boolean
                               }
                             </div>
                           </td>:<td  className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>Successfully</td>)}
-                          <td onClick={()=>{if(!admin){handleCheckout(el?._id);}}} className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'} pointer`}>{el?._id}</td>
+                          <td onClick={()=>{if(!admin&&!el?.paid){handleCheckout(el?._id);}}} className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'} pointer`}>{el?._id}</td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}><Link to={`/${(admin)?"admin/ordersCartAdmin":"ordersCart"}/${el?._id}`}>cart details</Link></td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>{el?.status}</td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>{String(el?.paid)}</td>
