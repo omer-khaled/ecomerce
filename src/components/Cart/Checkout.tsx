@@ -8,7 +8,7 @@ function Checkout():ReactElement {
     const [waitUrl,setWaiteUrl] = useState<boolean>(false);
    const handleCheckout = useCallback(async()=>{
         try{
-            const {data}:{data:{url:string|undefined,message:string|undefined,status:boolean|undefined}} = await axios.get(import.meta.env.VITE_API_BASE_URL+`/cart/checkout?cancel_url=http://localhost:5173/failedPage&success_url=http://localhost:5173/successPage`,{
+            const {data}:{data:{url:string|undefined,message:string|undefined,status:boolean|undefined}} = await axios.get(import.meta.env.VITE_API_BASE_URL+`/cart/checkout?cancel_url=https://omer-khaled.github.io/ecomerce/failedPage&success_url=https://omer-khaled.github.io/ecomerce/successPage`,{
                 headers:{
                     'Content-Type':'application/json'
                 },

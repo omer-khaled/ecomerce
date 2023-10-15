@@ -10,7 +10,7 @@ function OrdersTable({orders,admin}:{orders:ordersType[]|null,admin:null|boolean
   const {requestDone, setRequestDone} = useContext(context);
   const handleCheckout = useCallback(async(id:string)=>{
     try{
-        const {data}:{data:{url:string|undefined,message:string|undefined,status:boolean|undefined}} = await axios.get(import.meta.env.VITE_API_BASE_URL+`/cart/checkoutForExistsOrder/${id}?cancel_url=http://localhost:5173/failedPage&success_url=http://localhost:5173/successPage`,{
+        const {data}:{data:{url:string|undefined,message:string|undefined,status:boolean|undefined}} = await axios.get(import.meta.env.VITE_API_BASE_URL+`/cart/checkoutForExistsOrder/${id}?cancel_url=https://omer-khaled.github.io/ecomerce/failedPage&success_url=https://omer-khaled.github.io/ecomerce/successPage`,{
             headers:{
                 'Content-Type':'application/json'
             },
