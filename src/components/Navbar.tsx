@@ -27,7 +27,7 @@ function Navbar():ReactElement {
     useEffect(()=>{
         (async()=>{
             try{
-                if(auth){
+                if(auth&&userId){
                     const {data}:{data:{message:string,status:boolean,user:userType|undefined,errors:undefined|string|[]}} =await axios.get(import.meta.env.VITE_API_BASE_URL+`/auth/getuser/${userId}`,{
                         withCredentials:true
                     });
@@ -52,7 +52,7 @@ function Navbar():ReactElement {
                 <li className="nav-item">
                     <NavLink className={({isActive})=>{
                         return isActive?'nav-link active':'nav-link'
-                    }} aria-current="page" to="/"><i className="bi bi-house-fill"></i> Home</NavLink>
+                    }} aria-current="page" to="/ecomerce/"><i className="bi bi-house-fill"></i> Home</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className={({isActive})=>{

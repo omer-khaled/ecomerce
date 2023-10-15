@@ -96,7 +96,7 @@ export function Companies():ReactElement {
                         }} type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
                   </div>
               </div>
-              <Link to={'/admin/companies/addCompany'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
+              <Link to={'/ecomerce/admin/companies/addCompany'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
           </div>
 
       {
@@ -128,7 +128,7 @@ export function Companies():ReactElement {
                       return(
                         <tr key={el?._id}>
                           <td><div className='d-flex justify-content-center align-items-center'>
-                                <Link  to={`/admin/companies/updateCompany/${el?._id}`} className='p-0'><span className='bi bi-pencil-square text-success me-2'></span></Link>
+                                <Link  to={`/ecomerce/admin/companies/updateCompany/${el?._id}`} className='p-0'><span className='bi bi-pencil-square text-success me-2'></span></Link>
                                 <button className='p-0' onClick={()=>{
                                   handleRemoveCompanies(el?._id);
                                 }}><span className='bi bi-trash-fill text-danger'></span></button>

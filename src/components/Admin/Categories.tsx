@@ -95,7 +95,7 @@ export function Categories():ReactElement {
                     }}  type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
               </div>
           </div>
-          <Link to={'/admin/categories/addCategory'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
+          <Link to={'/ecomerce/admin/categories/addCategory'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
       </div>
       {
             (categories)?((categories.length!==0)?<>
@@ -127,7 +127,7 @@ export function Categories():ReactElement {
                       return(
                         <tr key={el?._id}>
                           <td><div className='d-flex justify-content-center align-items-center'>
-                                <Link  to={`/admin/categories/updateCategory/${el?._id}`} className='p-0' ><span className='bi bi-pencil-square text-success me-2'></span></Link>
+                                <Link  to={`/ecomerce/admin/categories/updateCategory/${el?._id}`} className='p-0' ><span className='bi bi-pencil-square text-success me-2'></span></Link>
                                 <button className='p-0' onClick={()=>{
                                   handleRemoveCompanies(el?._id);
                                 }}><span className='bi bi-trash-fill text-danger'></span></button>

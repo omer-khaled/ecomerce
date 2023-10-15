@@ -28,10 +28,10 @@ function Login({admin}:{admin:null|boolean}):ReactElement {
             });
             axios.defaults.headers.common['Authorization'] = `Bearer ${data.data.accessToken}`;
             axios.defaults.headers.common['Content-Type'] = `application/json`;
-            dispatch(authAction.login({token:`Bearer ${data.data.accessToken}`,user:data.data.user}));
+            dispatch(authAction.login({token:`Bearer ${data.data.accessToken}`,user:data.data.user._id}));
             makeModal(data.data.status,"Login",data.data.message).then(()=>{
                 if(data.data.status){
-                    Navigate('/shop',{
+                    Navigate('/ecomerce/shop',{
                         replace:true,
                     });
                 }
@@ -63,7 +63,7 @@ function Login({admin}:{admin:null|boolean}):ReactElement {
                     {(formik?.touched?.password&&formik?.errors?.password)&&formik?.errors?.password}
                 </div>
             </div>
-            <Link to={'/resetPassword'} className='m-0 p-0 my-1 fs-6 d-block text-center'>forget password</Link>
+            <Link to={'/ecomerce/resetPassword'} className='m-0 p-0 my-1 fs-6 d-block text-center'>forget password</Link>
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>
     </section>

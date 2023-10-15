@@ -6,7 +6,7 @@ function FailedPayment():ReactElement {
     <section className='w-100 d-flex flex-grow-1 justify-content-center align-items-center flex-column'>
         <img src={failedPage} alt="unAuth" className='img-fluid'/>
         <h1 className='mt-2 text-danger'>Payment Failed</h1>
-        <p className='fs-5 text-capitalize'>plz try again <Link to={'/cart'} className='fs-6 text-danger'>cart</Link></p>
+        <p className='fs-5 text-capitalize'>plz try again <Link to={'/ecomerce/cart'} className='fs-6 text-danger'>cart</Link></p>
   </section>
   )
 }

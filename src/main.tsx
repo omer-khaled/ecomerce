@@ -42,7 +42,7 @@ export const ShowSingleProduct = lazy(()=>import('./pages/ShowSingleProduct.tsx'
 export const AdminHome = lazy(()=>import('./pages/AdminHome.tsx'));
 const router = createBrowserRouter([
   {
-    path:'/',
+    path:'/ecomerce/',
     element:<Suspense fallback={<div className='flex-grow-1'><Loading classNamePropert='loader'/></div>}><App/></Suspense>,
     children:[
       {
@@ -50,15 +50,15 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:'/shop',
+        path:'shop',
         element:<Shop />
       },
       {
-        path:'/Categories/:id',
+        path:'Categories/:id',
         element:<ProductsInCategory />,
       },
       {
-        path:'/Companies/:id',
+        path:'Companies/:id',
         element:<ProductsInCompany />
       },
       {

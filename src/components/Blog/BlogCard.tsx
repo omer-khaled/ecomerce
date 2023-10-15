@@ -9,7 +9,7 @@ function BlogCard({blog}:{blog:blogType}):ReactElement {
                 <div className="card-body">
                     <h5 className="card-title w-100 text-primary">{blog?.title}</h5>
                     <p className="card-text w-100">{blog?.sumary}</p>
-                    <Link to={`/showBlog/${blog?._id}`}>read more...</Link>
+                    <Link to={`/ecomerce/showBlog/${blog?._id}`}>read more...</Link>
                 </div> 
             </div>
     </div>

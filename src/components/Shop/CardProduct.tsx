@@ -35,7 +35,7 @@ function CardProduct({product,auth,order,qty}:{product:productType,auth:boolean,
                     <span className='rounded border-1 bg-primary text-dark p-2 letterSpaceing'> {product?.company?.name}</span>
                 </div>
                 <p className="card-price fit-content m-0 p-0 position-absolute letterSpaceing rounded border-1 bg-primary p-1">{product?.price}$</p>
-                <Link className='text-center p-2' to={`/showProduct/${product?._id}`}>read more...</Link>
+                <Link className='text-center p-2' to={`/ecomerce/showProduct/${product?._id}`}>read more...</Link>
             </div>
     </div>
   )

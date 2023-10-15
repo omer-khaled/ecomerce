@@ -47,9 +47,9 @@ function UpdateNewCategoryCompany({name}:{name:string}):ReactElement{
                 });
                 makeModal(data.data.status,'Adding'+name,data.data.message).then(()=>{
                     if(name==='category'){
-                        Navigate('/admin/categories');
+                        Navigate('/ecomerce/admin/categories');
                     }else{
-                        Navigate('/admin/companies');
+                        Navigate('/ecomerce/admin/companies');
                     }
                 });
                 }catch(e){

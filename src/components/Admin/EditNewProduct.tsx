@@ -73,7 +73,7 @@ function EditNewProduct():ReactElement{
                         }
                     });
                     makeModal(data.data.status,'Adding Products',data.data.message).then(()=>{
-                            Navigate('/admin/products');
+                            Navigate('/ecomerce/admin/products');
                     });
                 }catch(e){
                     if(e){

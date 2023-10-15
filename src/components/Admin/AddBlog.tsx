@@ -48,7 +48,7 @@ function AddBlog():ReactElement{
                         }
                     });
                     makeModal(data.data.status,'Adding Blog',data.data.message).then(()=>{
-                        Navigate('/admin/blogs');
+                        Navigate('/ecomerce/admin/blogs');
                     });
                 }catch(e){
                     if(e){

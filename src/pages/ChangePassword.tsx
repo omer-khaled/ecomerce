@@ -23,7 +23,7 @@ function ChangePassword():ReactElement {
             });
             makeModal(data.data.status,"ResetPassword",data.data.message).then(()=>{
                 if(data.data.status){
-                    Navigate('/login',{
+                    Navigate('/ecomerce/login',{
                         replace:true,
                     });
                 }

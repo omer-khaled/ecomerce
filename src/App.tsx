@@ -13,7 +13,7 @@ function App() {
     (async()=>{
       try{
         if(auth===false){
-          const data =await axios.get('http://localhost:3002/auth/refresh',{
+          const data =await axios.get(import.meta.env.VITE_API_BASE_URL+'/auth/refresh',{
             withCredentials:true
           });
           if(data.data.status){

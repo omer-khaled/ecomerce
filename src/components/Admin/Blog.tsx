@@ -91,7 +91,7 @@ export function Blog():ReactElement {
                       }}  className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
                 </div>
             </div>
-            <Link to={'/admin/blogs/addblog'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
+            <Link to={'/ecomerce/admin/blogs/addblog'} className=' btn btn-primary d-flex justify-content-center'><i className="bi bi-plus-square-fill me-2"></i>Add</Link>
         </div>
       {
             (blogs)?((blogs.length!==0)?<>
@@ -124,7 +124,7 @@ export function Blog():ReactElement {
                       return(
                         <tr key={el?._id}>
                           <td><div className='d-flex justify-content-center align-items-center'>
-                                <Link  to={`/admin/blogs/UpdateBlog/${el?._id}`} className='p-0' ><span className='bi bi-pencil-square text-success me-2'></span></Link>
+                                <Link  to={`/ecomerce/admin/blogs/UpdateBlog/${el?._id}`} className='p-0' ><span className='bi bi-pencil-square text-success me-2'></span></Link>
                                 <button className='p-0' onClick={()=>{
                                     handleRemoveBlog(el?._id);
                                 }}><span className='bi bi-trash-fill text-danger'></span></button>

@@ -81,7 +81,7 @@ export function AdminHome():ReactElement{
                             </div>
                           </td>:<td  className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>Successfully</td>)}
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'} pointer`}>{el?._id}</td>
-                          <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}><Link to={`/${"admin/ordersCartAdmin"}/${el?._id}`}>cart details</Link></td>
+                          <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}><Link to={`/ecomerce/${"admin/ordersCartAdmin"}/${el?._id}`}>cart details</Link></td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>{el?.status}</td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>{String(el?.paid)}</td>
                           <td className={`text-capitalize ${(el?.paid)?'text-success':'text-danger'}`}>{String(el?.totalPrice)} $</td>

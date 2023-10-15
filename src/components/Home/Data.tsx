@@ -56,7 +56,7 @@ function Data({uri,name}:{uri:string,name:string}):ReactElement {
                                 <div className="card-body p-0 m-0">
                                     <h5 className="text-center mt-3 primary">{el?.name}</h5>
                                 </div>
-                                <Link to={`/${name}/${el?._id}`} className='btn btn-primary'>more...</Link>
+                                <Link to={`/ecomerce/${name}/${el?._id}`} className='btn btn-primary'>more...</Link>
                             </div>
                         </SwiperSlide>
                     )
