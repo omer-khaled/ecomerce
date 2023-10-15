@@ -84,7 +84,7 @@ const productseducer = createSlice({
     },
     extraReducers:(builder)=>{
         builder.addCase(getProducts.pending,(state)=>{
-            // state.products=null;
+            state.products=null;
             state.error=false;
         });
         builder.addCase(getProducts.fulfilled,(state,action)=>{
