@@ -34,7 +34,7 @@ function OrdersTable({orders,admin}:{orders:ordersType[]|null,admin:null|boolean
             });
         }
     }catch(e){
-        window.location.href = "http://localhost:5173/failedPage"
+        window.location.href = "https://omer-khaled.github.io/ecomerce/failedPage"
     }
   },[]);
   const handleUpdateStatus = useCallback(async(id:string)=>{

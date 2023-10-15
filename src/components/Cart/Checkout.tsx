@@ -34,7 +34,7 @@ function Checkout():ReactElement {
                 });
             }
         }catch(e){
-            window.location.href = "http://localhost:5173/failedPage"
+            window.location.href = "https://omer-khaled.github.io/ecomerce/failedPage"
         }
    },[]);
   return (
