@@ -84,7 +84,7 @@ function ShowSingleProduct():ReactElement {
         }
     },[id]);
   return (
-    <main className='m-0 p-0 flex-grow-1 row  d-flex justify-content-center align-items-start mt-3'>
+    <main className='m-0 p-0 flex-grow-1 row  d-flex justify-content-center align-items-start mt-3 flex-column flex-md-row'>
          {(data)?<>
             <div className='col mx-auto mb-3 row p-0 m-0 card'>
                 <img className='img-fluid p-0 rounded rounded-end-0 col-6 card-img-top' style={{objectFit:'cover',objectPosition:'top center',maxHeight:'65vh'}}  src={import.meta.env.VITE_API_BASE_URL+"/images/"+data?.imageUrl} alt={data?.title}/>

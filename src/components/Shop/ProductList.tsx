@@ -13,7 +13,7 @@ function ProductList():ReactElement {
     const dispatch = useDispatch<dispatchType>();
   return (
     <section className='col-md-9  flex-column'>
-        <section className='w-100 row row-cols-1 row-cols-md-2 row-cols-lg-3 h-100'>
+        <section className='w-100 row row-cols-1 row-cols-md-2 row-cols-lg-3 h-100 mx-auto'>
             {
                 (products)?(((products as productType[]).length===0)?<p className='w-100 fs-5 text-center text-primary'>No Products For Now</p>:(products as productType[]).map((el:productType)=>{
                     return(

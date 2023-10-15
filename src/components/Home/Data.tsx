@@ -52,7 +52,7 @@ function Data({uri,name}:{uri:string,name:string}):ReactElement {
                     return(
                         <SwiperSlide className='pointer' key={el?._id}>
                             <div className="card border-0 bg-info p-2 ">
-                                <img className='img-fluid' src={import.meta.env.VITE_API_BASE_URL+"/images/"+el?.image} alt={el?.name}/>
+                                <img className='img-fluid' style={{objectFit:'contain',height:'160px'}} src={import.meta.env.VITE_API_BASE_URL+"/images/"+el?.image} alt={el?.name}/>
                                 <div className="card-body p-0 m-0">
                                     <h5 className="text-center mt-3 primary">{el?.name}</h5>
                                 </div>

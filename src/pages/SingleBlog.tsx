@@ -75,14 +75,15 @@ function SingleBlog():ReactElement {
         }
     },[id]);
   return (
-    <main className='w-100 row mt-3'>
-         {(data)?<><div className='col-8 d-flex justify-content-start align-items-start flex-column'>
+    <main className='m-0 p-0 w-100 row mt-3'>
+         {(data)?<>
+            <div className='col-12 col-lg-8 d-flex mx-atuo justify-content-start align-items-start flex-column'>
                 <img className='img-fluid rounded' style={{objectFit:'cover',objectPosition:'top center'}}  src={import.meta.env.VITE_API_BASE_URL+"/images/"+data?.image} alt={data?.title}/>
                 <h1 className='w-100 text-capitalize my-3 text-center'>{data.title}</h1>
                 <h1 className='w-100 text-capitalize'>{data.sumary}</h1>
                 <div dangerouslySetInnerHTML={{__html:data.content}}></div>
             </div>
-            <div className='col-4'>
+            <div className='col-12 col-lg-4 mx-atuo'>
                     <div className='bg-dark rounded p-1'>
                         <p className='text-primary text-capitalize text-start fs-3'>comments</p>
                         {

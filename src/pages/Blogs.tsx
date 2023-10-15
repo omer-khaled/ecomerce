@@ -32,7 +32,7 @@ function Blogs() :ReactElement{
     }
   },[])
   return (
-    <section className='row flex-grow-1 m-0 p-1 box flex-column flex-md-row row-cols-3'>
+    <section className='row  mt-3 flex-grow-1 m-0 p-1 box flex-column flex-md-row row-cols-1 row-cols-md-2 row-cols-lg-3'>
         {
             (blogs)?(((blogs as blogType[]).length===0)?<p className='w-100 fs-5 text-center text-primary'>No Blogs For Now</p>:(blogs as blogType[]).map((el:blogType)=>{
                 return(
